@@ -48,7 +48,7 @@ img { max-width: 100%; display: block; } /* pictures never overflow their box */
    gap: 24px;
    list-style: none;
    margin: 0;
-   padding- 0;
+   padding: 0;
 }
 .nav-links a{
    color: white;
@@ -57,18 +57,53 @@ img { max-width: 100%; display: block; } /* pictures never overflow their box */
 
 /* STEP 4 · .logo
    Bigger than the links (1.6rem), bold, white, no underline. */
-
+.logo{
+   color: white;
+   font-size: 1.6rem;
+   font-weight: 700;
+   text-decoration: none;
+}
 
 /* STEP 5 · .hero
    At least 70vh tall, a background colour, white text.
    Text centered, and the content centered up and down. */
 
-
+.hero{
+   min-height: 70vh;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   background-color: #1e3aa1;
+   color: white;
+}
 /* STEP 6 · .btn and .hero-buttons
    .btn: inline-block, padding 12px 28px, rounded corners, no underline, bold.
    Give .btn-primary and .btn-secondary different looks.
    .hero-buttons: the two buttons side by side, centered, 16px apart. */
+.btn{
+   display: inline-block;
+   padding: 12px 28px;
+   border: 2px solid transparent;
+   border-radius: 8px ;
+   text-decoration: none;
+   font-weight: 700;
+}
 
+   .hero-buttons{
+   display: flex;
+   justify-content: center;
+   gap: 16px;
+}
 
+.btn-primary{
+   background-color: #f59e0b;
+   color: #111827;
+}
+.btn-secondary{
+   background-color: transparent;
+   border-color: white;
+   color: white;
+}
 /* Done early? Try other colours from the reference sheet (Colors tab).
    On day 2 we turn your colours into variables. */
+
